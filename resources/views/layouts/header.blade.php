@@ -41,7 +41,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+	background: url({{url('public/assets/img/loader.gif')}}) center no-repeat #fff;
 }
 .loader {
   border: 16px solid #f3f3f3;
@@ -72,5 +72,5 @@
 </style>
 </head>
 <body class="cnt-home">
-<div class="se-pre-con loader"></div> 
+<div class="se-pre-con "></div> 
  
