@@ -101,10 +101,10 @@
           
           <div class="module-body">
             <ul class='list-unstyled'>
-              <li class="fiRSt"><a href="myaccount" title="Contact us">My Account</a></li>
-              <li><a href="##" title="About us">Order History</a></li>
+              <li class="fiRSt"><a href="{{ url('myaccount') }}" title="Contact us">My Account</a></li>
+              <li><a href="{{ url('myaccount') }}" title="About us">Order History</a></li>
               <li><a href="{{url('faq')}}" title="faq">FAQ</a></li> 
-              <li class="last"><a href="##" title="Where is my order?">Help Center</a></li>
+              <li class="last"><a href="{{ url('contact') }}" title="Where is my order?">Help Center</a></li>
             </ul>
           </div>
           <!-- /.module-body --> 
@@ -120,9 +120,9 @@
           <div class="module-body">
             <ul class='list-unstyled'>
               <li class="fiRSt"><a title="Your Account" href="##">About us</a></li>
-              <li><a title="Information" href="##">Customer Service</a></li>
-              <li><a title="Addresses" href="##">Company</a></li>
-              <li><a title="Addresses" href="##">Investor Relations</a></li> 
+              <li><a title="Information" href="{{ url('contact') }}">Customer Service</a></li>
+              <li><a title="Addresses" href="{{ url('contact') }}">Company</a></li>
+              <li><a title="Addresses" href="{{ url('contact') }}">Investor Relations</a></li> 
             </ul>
           </div>
           <!-- /.module-body --> 
@@ -139,8 +139,8 @@
             <ul class='list-unstyled'>
               <li><a href="##" title="Blog">Blog</a></li>
               <li><a href="##" title="Company">Company</a></li>
-              <li><a href="##" title="Investor Relations">Investor Relations</a></li>
-              <li class=" last"><a href="contact-us.html" title="SupplieRS">Contact Us</a></li>
+              <li><a href="{{ url('contact') }}" title="Investor Relations">Investor Relations</a></li>
+              <li class=" last"><a href="{{ url('contact') }}" title="SupplieRS">Contact Us</a></li>
             </ul>
           </div>
           <!-- /.module-body --> 

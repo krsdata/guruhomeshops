@@ -203,6 +203,14 @@ class HomeController extends Controller
         return view('end-user.faq',compact('categories','products','category')); 
         return view('end-user.faq');   
     }
+
+    public function contact()
+    {
+         $products = Product::with('category')->orderBy('id','asc')->get();
+        $categories = Category::nested()->get(); 
+        return view('end-user.contact',compact('categories','products','category')); 
+        return view('end-user.contact');   
+    }
      /*----------*/
      public function trackOrder()
     {
