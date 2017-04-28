@@ -118,7 +118,7 @@
                 ]
         ); 
 
-         Route::bind('setting', function($value, $route) {
+        Route::bind('setting', function($value, $route) {
             return Modules\Admin\Models\Settings::find($value);
         });
  
@@ -131,6 +131,24 @@
                 'store'     => 'setting.store',
                 'index'     => 'setting',
                 'create'    => 'setting.create',
+            ]
+                ]
+        ); 
+
+
+          Route::bind('page', function($value, $route) {
+            return Modules\Admin\Models\Pages::find($value);    
+        });
+ 
+        Route::resource('admin/page', 'Modules\Admin\Http\Controllers\PageController', [
+            'names' => [
+                'edit'      => 'page.edit',
+                'show'      => 'page.show',
+                'destroy'   => 'page.destroy',
+                'update'    => 'page.update',
+                'store'     => 'page.store',
+                'index'     => 'page',
+                'create'    => 'page.create',
             ]
                 ]
         ); 

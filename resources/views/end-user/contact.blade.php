@@ -91,7 +91,8 @@
     </div>
     <div class="clearfix address">
         <span class="contact-i"><i class="fa fa-map-marker"></i></span>
-        <span class="contact-span" {!! isset($company_address->field_value)?$company_address->field_value:"Indore MP 452001" !!} </span> 
+         {!! isset($company_address->field_value)?$company_address->field_value:"Indore MP 452001" !!} 
+        <span class="contact-span"  </span>  
     </div>
     <div class="clearfix phone-no">
         <span class="contact-i"><i class="fa fa-mobile"></i></span>

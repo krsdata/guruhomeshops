@@ -116,7 +116,6 @@
                            <br>
                            {{ isset($contact_number->field_value)?$contact_number->field_value:"+91-7067777832" }} 
 
-
                             </td>
                              
                              <td align="right">

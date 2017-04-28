@@ -1,4 +1,3 @@
-
 <?php
 namespace Modules\Admin\Models;
 
@@ -7,9 +6,7 @@ use Modules\Admin\Models\Category;
 use Illuminate\Foundation\Http\FormRequest;
 use Response;
 
-class Page extends Eloquent {
-
-
+class Pages extends Eloquent { 
 
    
     /**
@@ -17,7 +14,7 @@ class Page extends Eloquent {
      *
      * @var string
      */
-    protected $table = ' pages';
+    protected $table = 'pages';
     /**
      * The attributes that are mass assignable.
      *
@@ -35,7 +32,8 @@ class Page extends Eloquent {
      *
      * @var array
      */
-    protected $fillable = ['title','page_content','banner_image1']; // All field of user table here    
+     protected $fillable = ['title','page_content','banner_image1']; // All field of user table here    
+
 
 
     /**
